@@ -1,0 +1,1 @@
+import{u as s,a as t,b as a}from"./index-DBqQFHFZ.js";const o=a(),c=()=>({bankAccount:s({queryKey:["getbankAccounts"],staleTime:1e3,enabled:!1,queryFn:async()=>await t("/api/native/v2/userBanks.do"),select:e=>{o.commit("setWithdrawBank",e)},onError:e=>{console.log(`error: ${e}`)}})});export{c as u};
